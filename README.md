@@ -1,3 +1,42 @@
+# Vite + React + React Router + PostCSS + Tailwind CSS
+
+## About
+- Created with `npm create vite@latest`
+- Then added Post CSS, Tailwind CSS, and React Router
+- Absolute path configured in `tsconfig.json` and `vite.config.json`
+- Two example pages, two example layouts, one example component:
+```
+  src/
+    components/
+      Stub.tsx
+    layouts/
+      LayoutSimple.tsx
+      LayoutStandard.tsx
+      shared/
+        Footer.tsx
+        NavLinks.tsx
+        Top.tsx
+    pages/
+      Home.tsx
+      Dashboard.tsx
+```
+
+
+## Get Started
+```
+$ npm install
+$ npm run dev
+```
+
+## License
+`MIT License`
+Commit ee8cdda8b01bc111456fdfbdbbc833eb2f048fbd
+3/20/2024
+
+---
+
+`-- ORIGINAL README --`
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

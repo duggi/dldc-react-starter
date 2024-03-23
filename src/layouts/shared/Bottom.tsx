@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import NavLinks from "@/layouts/shared/NavLinks";
 
-function Top() {
+function Bottom() {
   return (
-    <div className="top-rail bg-orange-50 p-4">
+    <div className="bottom-rail bg-purple-50 p-4">
       <code className="text-sm text-red-400">
-        [-- TOP --]
+        [-- BOTTOM --]
       </code>
       <NavLinks />
     </div>
   )
 }
 
-export default Top;
+export default Bottom;

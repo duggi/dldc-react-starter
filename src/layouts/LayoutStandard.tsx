@@ -1,23 +1,19 @@
 import { Outlet } from 'react-router-dom';
 
 import Top from '@/layouts/shared/Top';
-import Footer from '@/layouts/shared/Footer';
+import Bottom from '@/layouts/shared/Bottom';
 
 const LayoutStandard = () => {
   return (
     <div>
       <Top />
-      <hr/>
-      <h1>I am LayoutStandard</h1>
-      <div>
+      <div className="main-content bg-blue-50 p-4">
+        <h1>I am LayoutStandard</h1>
         <Outlet />
       </div>
-      <hr />
-      <Footer />
-      <hr/>
+      <Bottom />
     </div>
   );
 }
 
 export default LayoutStandard;
-

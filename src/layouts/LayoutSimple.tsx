@@ -1,8 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Top from '@/layouts/shared/Top';
 
-
-
 const LayoutSimple = () => {
   return (
     <div>

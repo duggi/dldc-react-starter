@@ -4,7 +4,6 @@
 @layer base {
   code {
     color: red;
-    @apply text-sm text-red-400;
   }
 }
 

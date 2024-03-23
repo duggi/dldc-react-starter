@@ -5,6 +5,7 @@ function NavLinks() {
     <div className="p-2 border border-dashed border-sky-400">
       <Link to="/">Home</Link>
       <Link to="/dashboard">Dashboard</Link>
+      <Link to="/dashboard-grid">Grid</Link>
     </div>
   )
 }

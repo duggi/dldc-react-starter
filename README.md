@@ -1,31 +1,52 @@
 # Vite + React + React Router + PostCSS + Tailwind CSS
 
+## Get Started
+```
+$ npm install
+$ npm run dev
+```
+
 ## About
-- Created with `npm create vite@latest`
-- Then added Post CSS, Tailwind CSS, and React Router
+**There are three branches, created in order. The tip of main was used to created each branch.**
+
+`[v0-base]`
+- Created with `npm create vite@latest` with Post CSS, Tailwind CSS, and React Router
+
+`[v1-styled]`
+- Applied basic styling
+
+`[v2-grid]`
+- Added a css grid layout
+- This layout sets screeen breakpoints in `tailwind.config.js` and `grid.css`
+- ```
+  "sm": "480px"
+  "md": "768px"
+  "lg": "1280px"
+  "xl": "1440px"
+  ```
+- `sm`: up to 48px (mobile) content cell only
+- `md`: 768px and up (tablet and desktop narrow) hides right cell
+- `lg`: 1280px and up (desktop wide) left, content, and right cells are displayed, and max-width set to `lg`
+- `xl`: 1440px and up (desktop widest) left, content, and right cells are displayed, and max-width set to `xl`
+
+## Details
 - Absolute path configured in `tsconfig.json` and `vite.config.json`
-- Two example pages, two example layouts, one example component:
+- Two example pages, three example layouts, one example component:
 ```
   src/
     components/
       Stub.tsx
     layouts/
+      LayoutGrid.tsx
       LayoutSimple.tsx
       LayoutStandard.tsx
       shared/
-        Footer.tsx
+        Bottom.tsx
         NavLinks.tsx
         Top.tsx
     pages/
       Home.tsx
       Dashboard.tsx
-```
-
-
-## Get Started
-```
-$ npm install
-$ npm run dev
 ```
 
 ## License

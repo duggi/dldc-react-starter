@@ -16,3 +16,4 @@
  * Should be completely independent of Tailwind class names
  */
 @import 'styles/global.css';
+@import 'styles/grid.css';

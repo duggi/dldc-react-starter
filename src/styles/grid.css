@@ -1,0 +1,80 @@
+/*
+ *  ------------------------
+ * |       TOP              |
+ * |------------------------|
+ * |      |         |       |
+ * | LEFT | CONTENT | RIGHT |
+ * |      |         |       |
+ * |      |         |       |
+ * |------------------------|
+ * |       BOTTOM           |
+ *  ------------------------
+ *
+ * # tailwind.config.js
+ * 'sm': '480px',
+ * 'md': '768px',
+ * 'lg': '1280px',
+ * 'xl': '1440px',
+ */
+
+.grid-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0 minmax(300px, 1fr) auto;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "top top top"
+    "left content right"
+    "bottom bottom bottom";
+}
+
+.top-rail {
+  grid-area: top;
+}
+
+.left-rail {
+  grid-area: left;
+  display: none;
+}
+
+.right-rail {
+  grid-area: right;
+  display: none;
+}
+
+.content {
+  grid-area: content;
+}
+
+.bottom-rail {
+  grid-area: bottom;
+}
+
+@media (min-width: 480px) {
+  .grid-layout {
+    grid-template-columns: 50px minmax(300px, 1fr) auto;
+    grid-template-areas:
+      "top top top"
+      "left content right"
+      "bottom bottom bottom";
+  }
+  .left-rail {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 240px minmax(400px, 1fr) auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-layout {
+    grid-template-columns: 240px minmax(400px, 1fr) 200px;
+  }
+  .right-rail {
+    display: block;
+  }
+}
+

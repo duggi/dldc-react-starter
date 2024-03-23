@@ -5,7 +5,7 @@ function Bottom() {
   return (
     <div className="bottom-rail bg-purple-50 p-4">
       <code>
-        [-- BOTTOM --]
+        BOTTOM
       </code>
       <NavLinks />
     </div>

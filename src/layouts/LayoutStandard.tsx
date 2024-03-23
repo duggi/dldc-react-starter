@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-
 import Top from '@/layouts/shared/Top';
 import Bottom from '@/layouts/shared/Bottom';
 

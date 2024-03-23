@@ -5,7 +5,7 @@ function Top() {
   return (
     <div className="top-rail bg-orange-50 p-4">
       <code>
-        [-- TOP --]
+        TOP
       </code>
       <NavLinks />
     </div>

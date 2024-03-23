@@ -1,0 +1,21 @@
+/* Inspect output and trace `code` style rule to understand order of injection.
+ * Rule in `global.css` will apply last.
+ */
+@layer base {
+  code {
+    color: red;
+    @apply text-sm text-red-400;
+  }
+}
+
+@layer components {
+  code {
+    color: blue;
+  }
+}
+
+@layer utilities {
+  code {
+    color: green;
+  }
+}
